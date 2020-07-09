@@ -3,4 +3,4 @@ for i in num:
     if(i<0):
         print(i)
     else :
-        continue
+        continue:
