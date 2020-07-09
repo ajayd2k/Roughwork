@@ -1,6 +1,3 @@
-num = [5,4,3,2,1,0,-1,-2,-3,-4,-5]
-for i in num:
-    if(i<0):
-        print(i)
-    else :
-        continue:
+num = int(input('Enter a number greater than 5 : '))
+assert num>5, 'The number entered by you is not greater than 5'
+print('The number greater than 5 entered by you is :', num)
