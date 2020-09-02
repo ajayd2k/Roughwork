@@ -38,3 +38,29 @@ for i in num:
         print(i)
     else :
         continue
+
+#
+class PlayerCharacter:
+    membership = True
+    def __init__(self, name, age):
+        if (age > 18):
+            self.name = name
+            self.age = age
+
+    def run(self):
+        print ('run')
+
+
+player1 = PlayerCharacter ('Ajay', 24)
+player2 = PlayerCharacter ('Shital', 45)
+# player2.attack = '50'
+# player1.membership = False
+
+# print (player2.name, player2.age)
+# print (f'My Name is {player1.name} and I am {player1.age} years old.')
+# print (player1.name, player1.age)
+# print(player2.attack)
+# print(player1.membership)
+print(player1.name,player1.run())
+print(player2.name,player2.run())
+
