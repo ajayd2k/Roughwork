@@ -39,28 +39,29 @@ for i in num:
     else :
         continue
 
-#
+# Classes
 class PlayerCharacter:
-    membership = True
+    membership = True # Class Attribute which are static
     def __init__(self, name, age):
         if (age > 18):
-            self.name = name
-            self.age = age
+            self.name = name #Declared Attribute which are dynamic
+            self.age = age #Declared Attribute which are dynamic
 
-    def run(self):
-        print ('run')
+    def run(self):#Method in a class
+        print ('run')#Method in the class but the return is not defined and hence it will print run and then none because the return is none.
 
 
-player1 = PlayerCharacter ('Ajay', 24)
-player2 = PlayerCharacter ('Shital', 45)
-# player2.attack = '50'
-# player1.membership = False
 
-# print (player2.name, player2.age)
-# print (f'My Name is {player1.name} and I am {player1.age} years old.')
-# print (player1.name, player1.age)
-# print(player2.attack)
-# print(player1.membership)
+player1 = PlayerCharacter ('Ajay', 24) #Instantiate the class / Creating an object with the details mentioned.
+player2 = PlayerCharacter ('Shital', 45) #Instantiate the class / Creating an object with the details mentioned.
+player2.attack = '50' #adding of an attribute to the object
+player1.membership = False #Changing the Class Attribute values
+
+print (player2.name, player2.age)
+print (f'My Name is {player1.name} and I am {player1.age} years old.')
+print (player1.name, player1.age)
+print(player2.attack)
+print(player1.membership)
 print(player1.name,player1.run())
 print(player2.name,player2.run())
 
